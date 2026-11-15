@@ -1,4 +1,4 @@
-// WA Sender: floating panel inside WhatsApp Web. Opens the chat for a number
+// WA Sender Multi: floating panel inside WhatsApp Web. Opens the chat for a number
 // in the current window and fills the templated message WITHOUT sending it.
 (() => {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -15,9 +15,9 @@
 
   // ---------- UI ----------
   // Remove a stale panel left behind by an earlier copy (e.g. after an extension reload).
-  document.getElementById("wa-sender-host")?.remove();
+  document.getElementById("wa-sender-multi-host")?.remove();
   const host = document.createElement("div");
-  host.id = "wa-sender-host";
+  host.id = "wa-sender-multi-host";
   host.style.cssText = "position:fixed;z-index:2147483647;";
   document.documentElement.appendChild(host);
   const root = host.attachShadow({ mode: "open" });
@@ -60,7 +60,7 @@
         <div class="status" id="status"></div>
         <div class="links"><a href="#" id="settings">Settings</a><a href="#" id="resetpos">Reset button position</a></div>
       </div>
-      <button class="fab" id="fab" title="WA Sender">
+      <button class="fab" id="fab" title="WA Sender Multi">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
       </button>
     </div>`;
@@ -74,7 +74,7 @@
   //  3. bottom-left corner.
   // We only float above WhatsApp's page, never insert into its DOM, so its
   // re-renders can't remove or break the button.
-  const POS_KEY = "wa-sender-button-pos";
+  const POS_KEY = "wa-sender-multi-button-pos";
   let savedPos = null;
   try { savedPos = JSON.parse(localStorage.getItem(POS_KEY)); } catch {}
 
@@ -262,7 +262,7 @@
   });
   // After the extension is updated, this copy of the panel is cut off from it.
   const alive = () => { try { return !!chrome.runtime.id; } catch { return false; } };
-  const STALE = "WA Sender was updated. Press Cmd+E or click its toolbar icon to load the new version.";
+  const STALE = "WA Sender Multi was updated. Press Cmd+E or click its toolbar icon to load the new version.";
 
   async function togglePanel() {
     wrap.classList.toggle("open");
@@ -328,7 +328,7 @@
       $("go").disabled = false;
     }
     // Never reload WhatsApp. Hand the message over via the clipboard instead.
-    console.info("WA Sender: could not open chat", failures);
+    console.info("WA Sender Multi: could not open chat", failures);
     await navigator.clipboard.writeText(text).catch(() => {});
     status(`Couldn't open the chat with ${number} automatically. The message is copied: ` +
            `open the chat yourself and paste (Ctrl+V / Cmd+V).\n\nDetails: ${failures.join(" | ")}`, "err");

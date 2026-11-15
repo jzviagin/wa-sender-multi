@@ -1,4 +1,4 @@
-# WA Sender
+# WA Sender Multi
 
 A Chrome and Safari extension that adds a small panel inside your open WhatsApp Web app
 window. Paste a phone number (any format), fill in the fields, and click

@@ -9,7 +9,7 @@ import Cocoa
 import SafariServices
 import WebKit
 
-let extensionBundleIdentifier = "com.jzviagin.wa-sender.Extension"
+let extensionBundleIdentifier = "com.jzviagin.wa-sender-multi.Extension"
 
 class ViewController: NSViewController, WKNavigationDelegate, WKScriptMessageHandler {
 

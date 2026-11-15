@@ -430,7 +430,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WA Sender Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Multi Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +443,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender-multi.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -465,7 +465,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WA Sender Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Multi Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,7 +478,7 @@
 					"-framework",
 					SafariServices,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender.Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender-multi.Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -504,7 +504,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WA Sender/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender";
+				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Multi";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -520,7 +520,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender-multi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -547,7 +547,7 @@
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WA Sender/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender";
+				INFOPLIST_KEY_CFBundleDisplayName = "WA Sender Multi";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -563,7 +563,7 @@
 					"-framework",
 					WebKit,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jzviagin.wa-sender-multi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;

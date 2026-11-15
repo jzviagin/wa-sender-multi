@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "WA Sender",
+  "name": "WA Sender Multi",
   "version": "2.1",
   "description": "Fill a templated message for any phone number in the open WhatsApp Web window, ready to review and send.",
   "icons": {
@@ -9,7 +9,7 @@
     "128": "icons/128.png"
   },
   "action": {
-    "default_title": "WA Sender (Cmd+E)",
+    "default_title": "WA Sender Multi (Cmd+E)",
     "default_icon": {
       "16": "icons/16.png",
       "48": "icons/48.png",
